@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
- root "books#index"
+
+  root "homes#top"
+
   resources :books
-  get "homes/top"
-  get 'top' => 'homes#top'
+
   get "up" => "rails/health#show", as: :rails_health_check
 
 end
